@@ -17,5 +17,4 @@ jobs:
       env:
         AWS_ACCESS_KEY_ID: ${{ secrets.MY_PAT }}
       run: |
-        echo ${{secrets.AWS_ACCESS_KEY_ID}}
-        echo ${{secrets.AWS_ACCESS_KEY_ID}} | sed 's/./& /g'
+        echo Hello
