@@ -17,6 +17,7 @@ jobs:
     steps:
     # Runs a single command using the runners shell
     - name: Send greeting
+      env:
+        DEBUG_PASSWORD: ${{ secrets.MY_PAT }}
       run: |
-          echo "Trick to echo GitHub Actions Secret:  "
-          echo ${{secrets.MY_PAT}} | sed 's/./& /g' 
+        echo $DEBUG_PASSWORD
