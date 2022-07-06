@@ -17,5 +17,9 @@ jobs:
       env:
         AWS_ACCESS_KEY_ID: ${{ secrets.MY_PAT }}
       run: |
-        echo ${{secrets.AWS_ACCESS_KEY_ID}}
-        echo "Hello ${{secrets.AWS_ACCESS_KEY_ID}}" > cypress.env.json
+        echo AWS_ACCESS_KEY_ID 
+
+
+
+
+
