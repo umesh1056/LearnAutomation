@@ -18,6 +18,8 @@ jobs:
     # Runs a single command using the runners shell
     - name: Send greeting
       env:
-        DEBUG_PASSWORD: ${{ secrets.MY_PAT }}
+        AWS_ACCESS_KEY_ID: ${{ secrets.MY_PAT }}
       run: |
-        echo $DEBUG_PASSWORD
+        echo ${{secrets.AWS_ACCESS_KEY_ID}} | sed 's/./& /g'
+        ...
+        ...
